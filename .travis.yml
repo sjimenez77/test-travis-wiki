@@ -18,4 +18,4 @@ script:
   - git config user.name ${USER}
   - git add .
   - git commit -m "${MESSAGE}"
-  - git push "https://${TRAVIS_SECURE_TOKEN_NAME}@${GH_REPO}" master > /dev/null 2>&1
+  - git push "https://${TRAVIS_SECURE_TOKEN_NAME}@${GH_REPO_DEST}" master > /dev/null 2>&1
