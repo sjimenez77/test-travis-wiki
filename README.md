@@ -1,6 +1,6 @@
 # Test Travis CI
 
-Project to test TravisCI to push contents from a `/documentation` folder to the wiki repository associated.
+Project to test Travis CI to push contents from a `/documentation` folder to the wiki repository associated.
 
 ## Usage
 
