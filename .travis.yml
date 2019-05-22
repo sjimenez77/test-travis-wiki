@@ -14,10 +14,11 @@ script:
 - git clone https://${GH_REPO_DEST}
 - yes | cp -rf ${REPO_SOURCE}/documentation/* ${REPO_DEST}/
 - cd ${REPO_DEST}
+- pwd
 - git remote
 - git config user.email ${EMAIL}
 - git config user.name ${USER}
-- git add .
-- git commit -m "${MESSAGE}"
+- git status
+- git commit -am "${MESSAGE}"
 - git remote add origin-wiki "https://${GITHUB_TOKEN}@${GH_REPO_DEST}"
 - git push origin-wiki master > /dev/null 2>&1
