@@ -1,0 +1,5 @@
+= Test1
+
+This is a test with AsciiDoc.
+We need to check that links get transformed.
+This link:Test2.asciidoc[link] should lead to a second AsciiDoc file both on code repo as well as in wiki.
