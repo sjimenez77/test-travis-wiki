@@ -1,7 +1,6 @@
 language: generic
 env:
   global:
-  - USER="sjimenez77"
   - EMAIL="sjimenez77@gmail.com"
   - REPO_SOURCE="test-travis-wiki"
   - REPO_DEST="test-travis-wiki.wiki"

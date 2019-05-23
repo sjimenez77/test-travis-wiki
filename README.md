@@ -16,7 +16,6 @@ $ gem install travis
 language: generic
 env:
   global:
-    - USER="your_username"
     - EMAIL="your email"
     - REPO_SOURCE="repo_source_name"
     - REPO_DEST="repo_wiki_name"
@@ -35,6 +34,7 @@ script:
   - git add .
   - git status
   - git commit -m "${MESSAGE}"
+  # ${USER} variable is included by default in Travis config
   - git remote add origin-wiki "https://${USER}:${GITHUB_TOKEN}@${GH_REPO_DEST}"
   - git push origin-wiki master
 ```
@@ -49,13 +49,13 @@ $ travis login
 $ travis login --pro
 ```
 
-5. Add the GITHUB_TOKEN
+5. Add the GITHUB_TOKEN with the value obtained in step 3.
 
 ```bash
 # If you are using travis.org
-$ travis encrypt SOMEVAR="secretvalue" --add
+$ travis encrypt GITHUB_TOKEN="secretvalue" --add
 # If you are using travis.com
-$ travis encrypt --com SOMEVAR="secretvalue" --add
+$ travis encrypt --com GITHUB_TOKEN="secretvalue" --add
 ```
 
 This will generate an output in your `.travis.yml` file like this:
