@@ -16,6 +16,7 @@ $ gem install travis
 language: generic
 env:
   global:
+    - USER="your username" # Remove it from an org repository and use Travis variable
     - EMAIL="your email"
     - REPO_SOURCE="repo_source_name"
     - REPO_DEST="repo_wiki_name"
