@@ -1,0 +1,5 @@
+= Test2
+
+This is another AsciiDoc page.
+
+We can also link back with such link:Test1.asciidoc#section[link].
